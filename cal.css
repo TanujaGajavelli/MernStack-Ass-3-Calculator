@@ -1,0 +1,66 @@
+body{
+    background-image: url('download.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:560px;
+}
+#buttons{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    width:95%;
+    gap: 10px;
+    padding: 5px;
+}
+button{
+    height:45px;
+    background-color: rgb(238, 111, 111);
+    border-radius: 5px;
+    border-color: rgb(226, 102, 102);
+}
+input{
+    border:2px solid rgb(223, 105, 105);
+    width: 95%;
+    height:45px;
+    border-radius: 5px;
+    background-color: rgb(239, 176, 140);
+    margin: 5px 0;
+}
+.cal{
+    border:2px solid rgb(104, 140, 219);
+    padding:10px;
+    border-radius:5px;
+    box-shadow: 0 0 50px rgb(7, 7, 7);
+}
+@media(max-width:320px) {
+    .cal {
+        height: 95%;
+        width:90%
+    }
+    button{
+        height:95px;
+    }
+    input{
+        height:100px;
+    }
+}
+@media (max-width:480px){
+    .cal {
+        height: 95%;
+        width:90%
+    }
+    button{
+        height:95px;
+    }
+    input{
+        height:100px;
+    }
+}
+@media(max-width:768px)
+{
+    .cal {
+        margin:20% auto;
+    }
+}
